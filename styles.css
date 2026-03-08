@@ -56,18 +56,45 @@ main {
   box-shadow: 0 18px 40px var(--shadow);
   padding: 1.25rem;
   min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .sidebar h2 {
   margin-top: 0;
   font-size: 1.15rem;
   letter-spacing: 0.02em;
+  margin-bottom: 0.4rem;
 }
 
 #status {
   line-height: 1.6;
   font-size: 0.95rem;
   word-break: break-word;
+}
+
+.skilltree {
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.skilltree img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tip {
+  font-size: 0.85rem;
+  background: rgba(48, 188, 237, 0.1);
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(48, 188, 237, 0.25);
 }
 
 .scene {
