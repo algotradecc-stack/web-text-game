@@ -254,7 +254,7 @@ function calcDamage(attacker, defender, isPlayer = false) {
 const story = {
   start: {
     text: "你从深处的时空裂隙中醒来，面前是一个破败的营地。记忆模糊，但你能感觉到命运正在召唤。",
-    image: "images/scene1.svg",
+    image: "images/start.svg",
     choices: [
       { label: "开始冒险", next: "chooseProfession" }
     ]
@@ -287,7 +287,7 @@ const story = {
       const prof = data.professions[state.player.profession];
       return `你现在是${prof.name}。${prof.description}\n\n你可以选择前往冒险、查看职业树，或休息恢复。`;
     },
-    image: () => data.professions[state.player.profession]?.image || "images/scene1.svg",
+    image: "images/camp.svg",
     choices: () => {
       const options = [
         { label: "前往下一关", next: "adventure" },
@@ -305,7 +305,7 @@ const story = {
       addHistory("在营地休息，恢复了 HP/MP。\n");
       return "你在营地休息，恢复了生命与魔力。";
     },
-    image: "images/scene1.svg",
+    image: "images/camp.svg",
     choices: [
       { label: "返回营地", next: "camp" }
     ]
@@ -363,7 +363,7 @@ const story = {
       addHistory(`遭遇了 ${state.enemy.name}！`);
       return `你踏入“${stage.name}”，一只 ${state.enemy.name} 出现了！\n${state.enemy.description}`;
     },
-    image: () => state.enemy?.image || "images/scene4.svg",
+    image: "images/battle.svg",
     choices: () => {
       const base = [
         { label: "攻击", next: "playerAttack" },
@@ -392,7 +392,7 @@ const story = {
       }
       return `敌人剩余 HP：${state.enemy.hp}`;
     },
-    image: () => state.enemy?.image || "images/scene4.svg",
+    image: "images/battle.svg",
     choices: () => {
       if (state.enemy.hp <= 0) {
         return [{ label: "收集奖励", next: "victory" }];
@@ -407,7 +407,7 @@ const story = {
       addHistory("你进入防御状态，减少下一次受到的伤害。");
       return "你准备防御，准备承受敌人的攻击。";
     },
-    image: () => state.enemy?.image || "images/scene4.svg",
+    image: "images/battle.svg",
     choices: () => [{ label: "敌人行动", next: "enemyTurn" }]
   },
 
@@ -433,7 +433,7 @@ const story = {
       }
       return `${result.text}\n敌人剩余 HP：${state.enemy.hp}`;
     },
-    image: () => state.enemy?.image || "images/scene4.svg",
+    image: "images/battle.svg",
     choices: () => {
       if (!state.enemy || state.enemy.hp <= 0) {
         return [{ label: "收集奖励", next: "victory" }];
@@ -449,7 +449,7 @@ const story = {
       const damage = calcDamage(state.enemy, state.player, false);
       if (state.player.guard) {
         state.player.guard = 0;
-        addHistory("你的防御减轻了部分伤害。" );
+        addHistory("你的防御减轻了部分伤害。");
       }
       if (damage > 0) {
         state.player.hp -= damage;
@@ -461,7 +461,7 @@ const story = {
       }
       return `你的 HP 还剩 ${state.player.hp}。`;
     },
-    image: () => state.enemy?.image || "images/scene4.svg",
+    image: "images/battle.svg",
     choices: () => {
       if (state.player.hp <= 0) {
         return [{ label: "重新开始", next: "gameOver" }];
@@ -483,7 +483,7 @@ const story = {
       }
       return `${rewardText}\n你准备继续前进。`;
     },
-    image: "images/scene4.svg",
+    image: "images/victory.svg",
     choices: () => {
       if (state.currentStage >= data.stages.length) {
         return [{ label: "再次挑战", next: "start" }];
@@ -494,7 +494,7 @@ const story = {
 
   gameOver: {
     text: "你倒下了。即便如此，传说仍在继续。",
-    image: "images/scene4.svg",
+    image: "images/gameover.svg",
     choices: [{ label: "重新开始", next: "start" }]
   }
 };

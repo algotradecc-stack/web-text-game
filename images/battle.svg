@@ -1,0 +1,16 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f15" />
+      <stop offset="100%" stop-color="#05090f" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <g stroke="#30bced" stroke-width="4" fill="none" opacity="0.9">
+    <path d="M160 240 L220 180 L280 240" />
+    <path d="M360 240 L420 180 L480 240" />
+    <path d="M200 210 L440 210" />
+    <path d="M320 180 L320 260" />
+  </g>
+  <text x="320" y="330" fill="#b2d8ea" font-family="ui-sans-serif, system-ui" font-size="22" text-anchor="middle">战斗开始！</text>
+</svg>
