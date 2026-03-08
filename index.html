@@ -8,25 +8,32 @@
   </head>
   <body>
     <header>
-      <h1>Text Adventure</h1>
-      <p class="subtitle">A short interactive story with images.</p>
+      <h1>超時空傳說 3（Web）</h1>
+      <p class="subtitle">在浏览器中体验职业、技能树与战斗的文字冒险。</p>
     </header>
 
     <main>
-      <section class="scene" id="scene">
-        <figure class="scene-image" aria-label="Scene illustration">
-          <img id="sceneImage" src="images/scene1.svg" alt="" />
-        </figure>
+      <div class="game-grid">
+        <section class="scene" id="scene">
+          <figure class="scene-image" aria-label="Scene illustration">
+            <img id="sceneImage" src="images/scene1.svg" alt="" />
+          </figure>
 
-        <article class="scene-text">
-          <p id="sceneText"></p>
-        </article>
+          <article class="scene-text">
+            <p id="sceneText"></p>
+          </article>
 
-        <div id="choices" class="choices"></div>
-      </section>
+          <div id="choices" class="choices"></div>
+        </section>
+
+        <aside class="sidebar" id="sidebar">
+          <h2>角色状态</h2>
+          <div id="status"></div>
+        </aside>
+      </div>
 
       <footer class="footer">
-        <button id="restartBtn" class="btn" type="button">Restart</button>
+        <button id="restartBtn" class="btn" type="button">重新开始</button>
       </footer>
     </main>
 

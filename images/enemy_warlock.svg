@@ -1,0 +1,8 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#0b0f14" />
+  <circle cx="320" cy="170" r="110" fill="#1b1d23" stroke="#30bced" stroke-width="6" />
+  <path d="M300 160 C320 120 340 160 320 180" fill="none" stroke="#cc6ce6" stroke-width="8" />
+  <path d="M320 180 L320 220" stroke="#cc6ce6" stroke-width="8" />
+  <path d="M300 230 Q320 250 340 230" fill="none" stroke="#cc6ce6" stroke-width="8" />
+  <text x="320" y="310" fill="#caaaed" font-family="ui-sans-serif, system-ui" font-size="22" text-anchor="middle">亡灵法师</text>
+</svg>

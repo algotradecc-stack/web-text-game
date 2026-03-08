@@ -39,9 +39,35 @@ h1 {
 }
 
 main {
-  max-width: 760px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 1rem;
+}
+
+.sidebar {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 40px var(--shadow);
+  padding: 1.25rem;
+  min-height: 320px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+#status {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  word-break: break-word;
 }
 
 .scene {
@@ -103,12 +129,20 @@ main {
   text-align: right;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
   header {
     padding: 1.5rem 1rem 1rem;
   }
 
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+
   .scene {
     margin: 0 0.5rem;
+  }
+
+  .sidebar {
+    min-height: auto;
   }
 }

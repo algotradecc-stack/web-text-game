@@ -1,0 +1,7 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#0b1014" />
+  <circle cx="320" cy="170" r="110" fill="#1d2c1f" stroke="#30bced" stroke-width="6" />
+  <path d="M280 170 Q320 140 360 170" fill="none" stroke="#bced30" stroke-width="8" />
+  <path d="M300 210 Q320 180 340 210" fill="none" stroke="#bced30" stroke-width="8" />
+  <text x="320" y="310" fill="#bced30" font-family="ui-sans-serif, system-ui" font-size="22" text-anchor="middle">哥布林</text>
+</svg>

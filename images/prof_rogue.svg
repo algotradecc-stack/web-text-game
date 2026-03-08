@@ -1,0 +1,7 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#0a131a" />
+  <circle cx="320" cy="170" r="110" fill="#13212b" stroke="#30bced" stroke-width="6" />
+  <path d="M280 160 L320 140 L360 160" fill="none" stroke="#e7e9ea" stroke-width="10" stroke-linecap="round" />
+  <path d="M310 190 L330 210" stroke="#e7e9ea" stroke-width="10" stroke-linecap="round" />
+  <text x="320" y="310" fill="#9ccce2" font-family="ui-sans-serif, system-ui" font-size="22" text-anchor="middle">游侠</text>
+</svg>

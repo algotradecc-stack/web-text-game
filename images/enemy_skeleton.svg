@@ -1,0 +1,8 @@
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="360" fill="#0b0c10" />
+  <circle cx="320" cy="170" r="110" fill="#1a1a1a" stroke="#30bced" stroke-width="6" />
+  <path d="M300 150 L340 150" stroke="#e7e9ea" stroke-width="12" stroke-linecap="round" />
+  <path d="M310 170 L330 170" stroke="#e7e9ea" stroke-width="8" stroke-linecap="round" />
+  <path d="M320 150 L320 220" stroke="#e7e9ea" stroke-width="10" />
+  <text x="320" y="310" fill="#b2d8ea" font-family="ui-sans-serif, system-ui" font-size="22" text-anchor="middle">骷髅</text>
+</svg>
