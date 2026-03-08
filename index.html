@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Text Adventure</h1>
+      <p class="subtitle">A short interactive story with images.</p>
+    </header>
+
+    <main>
+      <section class="scene" id="scene">
+        <figure class="scene-image" aria-label="Scene illustration">
+          <img id="sceneImage" src="images/scene1.svg" alt="" />
+        </figure>
+
+        <article class="scene-text">
+          <p id="sceneText"></p>
+        </article>
+
+        <div id="choices" class="choices"></div>
+      </section>
+
+      <footer class="footer">
+        <button id="restartBtn" class="btn" type="button">Restart</button>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
