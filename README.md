@@ -23,3 +23,20 @@ python -m http.server 8000
 ```
 
 Then visit: http://localhost:8000
+
+## Deploying (GitHub Pages)
+
+To deploy the latest changes to GitHub Pages, run:
+
+```sh
+./deploy.sh "Your commit message here"
+```
+
+This script will:
+
+- stage all changes
+- commit with your message
+- push to `main`
+- force-sync `gh-pages` to match `main`
+
+Then open: https://algotradecc-stack.github.io/web-text-game/
