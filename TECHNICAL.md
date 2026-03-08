@@ -42,6 +42,8 @@ This file tracks **technical decisions, implementation notes, and ongoing change
 - Added stage/enemy progression and basic turn-based combat.
 - Added skill unlock system (skill points, skill learning in camp).
 - Added status sidebar to show player stats and recent history.
+- Updated the public GitHub Pages deployment (gh-pages branch) to reflect latest commits.
+- Updated `index.html` title to match the in-game name and avoid stale cached title behavior.
 
 ---
 
